@@ -9,6 +9,10 @@
     <title>Especies</title>
 </head>
 <body>
+    <?php
+    include('conection.php');
+    ?>
+
     <div class="nav">
         <a href="#">Especies favoritas</a>
         <a href="formulario.php">Agrega tu especie</a>
@@ -25,11 +29,21 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th><img src=""></th>
-                    <th></th>
-                    <th class="description"></th>
-                </tr>
+                <?php
+                    $sql = "SELECT fotografia,nombre,descripcion FROM especies";
+                    $stmt = $conn->prepare($sql);
+                    $stmt->execute();
+
+                    $stmt->setFetchMode(PDO::FETCH_ASSOC);
+
+                    foreach($stmt->fetchAll() as $row) {
+                        echo '<tr>
+                            <th><img src="' . $row['fotografia'] . '"></th>
+                            <th>' . $row['nombre'] . '</th>
+                            <th class="description">' . $row['descripcion'] . '</th>
+                        </tr>';
+                    }
+                ?>
             </tbody>
         </table>
     </div>
