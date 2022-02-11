@@ -1,0 +1,206 @@
+* {
+    font-family: Quicksand, Arial, Helvetica;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(251, 255, 246);
+}
+
+div.nav {
+    background: rgb(23, 153, 77);
+    width:98%;
+    text-align: right;
+    padding: 1em;
+    position:fixed;
+    z-index: 1000;
+}
+
+div.nav a {
+    background: rgb(23, 130, 77);
+    border-radius: .3em;
+    padding: .5em;
+    margin: .5em 0.25em;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+div.nav a:hover {
+    background: rgb(55, 163, 45);
+}
+
+div.con {
+    position: relative;
+    top: 4em;
+    z-index: 950;
+    width: 70vw;
+    margin:auto;
+    background: rgb(243, 243, 243);
+    box-sizing: border-box;
+    padding: 5mm;
+    color:dimgrey;
+    border-radius: 5px;
+    border-top: 4px solid rgb(55, 163, 45);
+    border-bottom: 4px solid rgb(63, 189, 52);
+}
+
+h1 {
+    color:darkslategray;
+    text-align: center;
+    font-size: 8mm;
+    margin-top: 4mm;
+}
+
+h2 {
+    color:darkolivegreen;
+    font-size: 6.5mm;
+    margin-top: 4mm;
+}
+
+p, ol, ul, table {
+    margin-top: 2mm;
+}
+
+span.bold {
+    font-weight: bold;
+    color: black;
+}
+
+ol, ul {
+    padding-left: 8mm;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+thead {
+    background: rgb(178, 216, 184);
+}
+
+tbody {
+    background: rgb(237, 255, 240);
+}
+
+tbody th {
+    font-weight: 100;
+}
+
+th { 
+    border: 2px solid rgb(167, 167, 167);
+    padding: 5px;
+}
+
+th.description {
+    text-align: left;
+}
+
+div.con img {
+    float: right;
+    width: 5cm;
+    border-radius: 50%;
+    display:inline-block;
+    margin: 2mm;
+}
+
+div.con a:visited {
+    color:gray;
+}
+
+div.con a:hover {
+    font-weight: bold;
+    color: rgb(25, 223, 58);
+}
+
+div.footer {
+    position: relative;
+    top: 25px;
+    z-index: 900;
+    box-sizing: border-box;
+    background: rgb(23, 153, 77);
+    width:100%;
+    height: 115px;
+    padding: 1em;
+    padding-top: 50px;
+    text-align: center;
+}
+
+div.footer .contact-info {
+    position: relative;
+    bottom: 18px;
+    display: inline-block;
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: 900;
+    position: relative;
+}
+
+div.footer img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+div.footer img:hover {
+    width: 60px;
+    border-radius: 50%;
+}
+
+div.con form {
+    background: rgb(230, 230, 230);
+    max-width:25em;
+    padding: 5mm;
+    border-radius: 5px;
+    border-top: 3px solid gray;
+    border-bottom: 3px solid gray;
+    margin: 5mm auto;
+    text-align: center;
+}
+
+form textarea {
+    resize: none;
+}
+
+form input, form textarea, form select{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1mm;
+    border: none;
+    border-bottom: 2px solid gray;
+    margin-top: 2mm;
+    border-radius: 4px;
+    
+}
+
+select {
+    text-align: center;
+}
+
+form input[type=radio], form input[type=checkbox] {
+    width: auto;
+}
+
+
+form button {
+    display: block;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 6mm;
+    width: 6em;
+    height: 2em;
+    background: rgb(95, 161, 122);
+    border-radius: 5px;
+    border: none;
+    font-size: 6mm;
+    padding: 0;
+    font-weight: bold;
+}
+
+form button:hover {
+    background: rgb(117, 179, 143);
+    width: 6.1em;
+}
+
+div.con, div.con form, button{
+    box-shadow: -2px -2px 5px 0 grey;
+}
