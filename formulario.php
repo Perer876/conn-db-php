@@ -9,43 +9,24 @@
     <title>Formulario</title>
 </head>
 <body>
-    <div class="nav">
-        <a href="index.php">Indice</a>
-        <a href="#">Formulario</a>
+<div class="nav">
+        <a href="index.php">Especies favoritas</a>
+        <a href="#">Agrega tu especie</a>
     </div>
 
     <div class="con">
-        <h1>Contacto</h1>
-        <form method="get" action="index.html">
+        <h1>Tu especie</h1>
+        <form method="get" action="store.php">
             <h2><label>Nombre</label></h2>
-            <input type="text" name="nombre" placeholder="Pepe"> 
-            
-            <h2><label>Correo</label></h2>
-            <input type="mail" name="correo" placeholder="tu.correo@aqui.com" required> 
-            
-            <h2><label>Genero</label></h2>
-            <input type="radio" id="mujer" value="mujer" name="genero"><label for="mujer">Mujer</label>
-            <input type="radio" id="hombre" value="hombre" name="genero"><label for="hombre">Hombre</label>
-            <input type="radio" id="nobinario" value="nobinario" name="genero"><label for="nobinario">No binario</label>
+            <input type="text" name="nombre" placeholder="Nombre de la especie"> 
 
-            <h2><label>Contraseña</label></h2>
-            <input type="password" name="contraseña" placeholder="Esfuerazate y colocale una buena" required>
+            <h2><label>Descripción</label></h2>
+            <textarea name="descripcion" rows="5" placeholder="Describe a la especie"></textarea>
 
-            <h2><label>Comentario</label></h2>
-            <textarea name="comentario" rows="5" placeholder="Dime lo que piensas del sitio"></textarea>
+            <h2><label>Fotografia</label></h2>
+            <input type="text" name="fotografia" placeholder="Copia una URL aquí"> 
 
-            <h2><label>Ciudad</label></h2>
-            <select name="ciudad">
-                <option value="guadalajara">Guadalajara</option>
-                <option value="zapopan">Zapopan</option>
-                <option value="tonala">Tonalá</option>
-                <option value="otra">Otra</option>
-            </select>
-
-            <input type="checkbox" id="interesado" name="interesado">
-            <label for="interesado">Me interesa contratarte</label>
-
-            <button>Enviar</button>            
+            <button>Guardar</button>            
         </form>
     </div>
 
