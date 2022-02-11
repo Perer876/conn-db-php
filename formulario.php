@@ -16,15 +16,15 @@
 
     <div class="con">
         <h1>Tu especie</h1>
-        <form method="get" action="store.php">
+        <form method="post" action="store.php">
             <h2><label>Nombre</label></h2>
-            <input type="text" name="nombre" placeholder="Nombre de la especie"> 
+            <input type="text" name="nombre" placeholder="Nombre de la especie" required> 
 
             <h2><label>Descripción</label></h2>
-            <textarea name="descripcion" rows="5" placeholder="Describe a la especie"></textarea>
+            <textarea name="descripcion" rows="5" placeholder="Describe a la especie" required></textarea>
 
             <h2><label>Fotografia</label></h2>
-            <input type="text" name="fotografia" placeholder="Copia una URL aquí"> 
+            <input type="text" name="fotografia" placeholder="Copia una URL aquí" required> 
 
             <button>Guardar</button>            
         </form>
